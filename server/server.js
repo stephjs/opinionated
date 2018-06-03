@@ -12,9 +12,9 @@ const models = require('./models');
 const schema = require('./schema/schema');
 const webpackConfig = require('../webpack.config.js');
 const dotenv = require('dotenv').config();
-if (dotenv.error) {
-  throw dotenv.error;
-}
+// if (dotenv.error) {
+//   throw dotenv.error;
+// }
 
 const app = express();
 const MONGO_URI = process.env.MONGOURI;
