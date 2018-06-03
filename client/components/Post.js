@@ -73,16 +73,13 @@ class Post extends Component {
 	}
 
 	onSubmitComment(event) {
-		console.log("submitted comment...");
 		event.preventDefault();
-		console.log(this.props);
 		this.props.mutate({
 			variables: {
 			  "PostId": this.state.PostId,
 			  "content": this.state.newComment
 			}
 		}).catch(function(error) {
-		  console.log(error);
 		}).then(() => this.setState({ newComment: "" }));
 	}
 	render() {

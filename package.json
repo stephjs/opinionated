@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js --ignore client"
+    "dev": "nodemon index.js --ignore client",
+    "postinstall": "webpack -p",
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Stephanie Orpilla",
   "license": "ISC",
   "dependencies": {
     "apollo-client": "^0.8.7",
@@ -25,10 +27,12 @@
     "graphql": "^0.8.2",
     "html-webpack-plugin": "^2.26.0",
     "lodash": "^4.17.4",
+    "micro": "latest",
     "mongoose": "^4.7.8",
     "nodemon": "^1.17.5",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
+    "postcss": "^6.0.22",
     "pusher": "^2.0.0",
     "pusher-js": "^4.2.2",
     "react": "15.4.2",
