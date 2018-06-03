@@ -1,0 +1,72 @@
+.material-icons {
+	cursor: pointer;
+}
+
+.nav-wrapper {
+	margin: 0 30px;
+}
+
+@media only screen and (min-width: 993px) {
+	.nav-wrapper {
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+
+.loader-holder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loader {
+	display: block;
+	margin-top: 80px;
+	height: 200px;
+	width: 200px;
+}
+
+h3 {
+	display: inline;
+	font-size: 1.9rem;
+}
+
+ul, form {
+	clear: both;
+}
+form {
+	width: 100%;
+}
+
+.container__title {
+	padding: 20px 0 10px;
+}
+
+.collection.feed {
+	border: none;
+}
+.collection-item {
+	display: flex;
+}
+.collection-item a {
+	flex-grow: 2;
+}
+.collection-item.secret {
+	color: gray;
+	border-bottom: none;
+	padding-top: 0;
+    padding-bottom: 0;
+}
+
+.collection-item.card {
+	margin: 0 0 15px;
+	border: 1px solid #e0e0e0;
+}
+.collection .comments .collection-item:last-child {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comments {
+	max-height: 60vh;
+    overflow-y: scroll;
+}
